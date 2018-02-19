@@ -21,6 +21,7 @@
         <TextBlock x:Name="Output" HorizontalAlignment="Left" Margin="268,306,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="143" Width="200" FontSize="24" FontFamily="Tahoma"/>
         <TextBlock HorizontalAlignment="Left" Margin="198,27,0,0" Text="Please enter the height and width: " TextWrapping="Wrap" VerticalAlignment="Top" Height="87" Width="702" FontSize="36" FontFamily="Tahoma"/>
         <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="397,452,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.316,2.446" FontFamily="Tahoma" FontSize="36" FocusVisualPrimaryBrush="#FF7A3DD3" Background="#FF7A3DD3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="191,507,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
