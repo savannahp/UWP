@@ -17,25 +17,81 @@ using Windows.UI.Xaml.Navigation;
 
 namespace HelloWorld
 {
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public double width;
+        public double height;
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        /*private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MediaElement mediaElement = new MediaElement();
-            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Hello, World!");
-            mediaElement.SetSource(stream, stream.ContentType);
-            mediaElement.Play();
-        }*/
 
-        fajsdhfj 
+
+        /* private async void Button_Click(object sender, RoutedEventArgs e)
+         {
+             MediaElement mediaElement = new MediaElement();
+             var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+             Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Hello, World!");
+             mediaElement.SetSource(stream, stream.ContentType);
+             mediaElement.Play();
+         }
+         */
+
+
+        private bool Validate_Input()
+        {
+            bool good = true;
+            string heightString = heightInput.Text;
+            string widthString = widthInput.Text;
+            if (!Double.TryParse(heightString, out height))
+            {
+                HeightError.Text = "Please enter a valid number";
+                heightInput.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                good = false;
+            }
+            else
+            {
+                HeightError.Text = "";
+                heightInput.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Black);
+            }
+            if (!Double.TryParse(widthString, out width))
+            {
+                WidthError.Text = "Please enter a valid number";
+                widthInput.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                good = false;
+            }
+            else
+            {
+                WidthError.Text = "";
+                widthInput.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Black);
+            }
+            return good;
+        }
+
+
+
+        private void submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (Validate_Input())
+            {
+                double woodLength, glassArea;
+                string widthString, heightString;
+
+
+
+                woodLength = 2 * (width + height) * 3.25;
+                glassArea = 2 * (width * height);
+
+
+                lengthBox.Text = $"{woodLength} in";
+                areaBox.Text = $"{glassArea} in2";
+
+                //test test
+            }
+        }
     }
-}
