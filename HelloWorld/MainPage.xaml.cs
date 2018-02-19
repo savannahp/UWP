@@ -90,7 +90,7 @@ namespace HelloWorld
                 glassArea = 2 * (_width * _height);
 
 
-                lengthOut.Text = $"{woodLength} in";
+                outLength.Text = $"{woodLength} in";
                 areaOut.Text = $"{glassArea} in2";
 
                 //test test

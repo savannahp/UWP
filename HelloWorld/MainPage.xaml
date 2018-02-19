@@ -21,7 +21,7 @@
         <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="141,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.316,2.446" FontFamily="Tahoma" FontSize="36" Background="#FF7A3DD3"/>
         <TextBlock x:Name="lengthText" HorizontalAlignment="Left" Margin="98,441,0,0" Text="The length of the wood is: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
         <TextBlock x:Name="areaText" HorizontalAlignment="Left" Margin="100,491,0,0" Text="The area of the glass is: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
-        <TextBlock x:Name="lengthOut" HorizontalAlignment="Left" Margin="378,448,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="outLength" HorizontalAlignment="Left" Margin="378,448,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
         <TextBlock x:Name="areaOut" HorizontalAlignment="Left" Margin="384,490,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
         <TextBlock x:Name="HeightError" HorizontalAlignment="Left" Margin="508,95,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
         <TextBlock x:Name="WidthError" HorizontalAlignment="Left" Margin="510,205,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
