@@ -7,21 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FFD2B6E2" FocusVisualPrimaryBrush="#FFD2B6E2">
+    <Grid Background="#FFD2B6E2" >
         <Button Content="Hello, World" HorizontalAlignment="Left" Margin="863,528,0,0" VerticalAlignment="Top" Height="72" Width="106"/>
-        <TextBox x:Name="widthInput" HorizontalAlignment="Left" Margin="477,292,0,0" Text="" VerticalAlignment="Top" Height="62" Width="179" FontSize="24" FontFamily="Tahoma"/>
-        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="480,174,0,0" Text="" VerticalAlignment="Top" Height="64" Width="176" FontSize="24" FontFamily="Tahoma"/>
-        <TextBox x:Name="width" HorizontalAlignment="Left" Margin="268,294,0,0" Text="Width" VerticalAlignment="Top" RenderTransformOrigin="-3.048,0.25" Height="61" Width="174" FontSize="36" FontFamily="Tahoma"/>
-        <TextBox x:Name="height" HorizontalAlignment="Left" Margin="266,173,0,0" Text="Height" VerticalAlignment="Top" Height="67" Width="174" TextChanged="TextBox_TextChanged" FontSize="36" FontFamily="Tahoma"/>
+        <TextBox x:Name="widthInput" HorizontalAlignment="Left" Margin="240,195,0,0" Text="" VerticalAlignment="Top" Height="62" Width="179" FontSize="24" FontFamily="Tahoma"/>
+        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="243,77,0,0" Text="" VerticalAlignment="Top" Height="64" Width="176" FontSize="24" FontFamily="Tahoma"/>
+        <TextBox x:Name="width" HorizontalAlignment="Left" Margin="31,197,0,0" Text="Width" VerticalAlignment="Top" RenderTransformOrigin="-3.048,0.25" Height="61" Width="174" FontSize="36" FontFamily="Tahoma"/>
+        <TextBox x:Name="height" HorizontalAlignment="Left" Margin="29,76,0,0" Text="Height" VerticalAlignment="Top" Height="67" Width="174"  FontSize="36" FontFamily="Tahoma"/>
         <Image x:Name="pic" HorizontalAlignment="Left" Height="100" Margin="696,116,0,0" VerticalAlignment="Top" Width="100">
-            <Image.FocusVisualPrimaryBrush>
-                <ImageBrush/>
-            </Image.FocusVisualPrimaryBrush>
+           
         </Image>
-        <TextBlock x:Name="Output" HorizontalAlignment="Left" Margin="268,306,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="143" Width="200" FontSize="24" FontFamily="Tahoma"/>
-        <TextBlock HorizontalAlignment="Left" Margin="198,27,0,0" Text="Please enter the height and width: " TextWrapping="Wrap" VerticalAlignment="Top" Height="87" Width="702" FontSize="36" FontFamily="Tahoma"/>
-        <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="397,452,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.316,2.446" FontFamily="Tahoma" FontSize="36" FocusVisualPrimaryBrush="#FF7A3DD3" Background="#FF7A3DD3"/>
-        <TextBlock HorizontalAlignment="Left" Margin="191,507,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Output" HorizontalAlignment="Left" Margin="31,209,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="143" Width="200" FontSize="24" FontFamily="Tahoma"/>
+        <TextBlock HorizontalAlignment="Left" Margin="192,9,0,0" Text="Please enter the height and width: " TextWrapping="Wrap" VerticalAlignment="Top" Height="87" Width="702" FontSize="36" FontFamily="Tahoma"/>
+        <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="141,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.316,2.446" FontFamily="Tahoma" FontSize="36" Background="#FF7A3DD3"/>
+        <TextBlock x:Name="lengthText" HorizontalAlignment="Left" Margin="98,441,0,0" Text="The length of the wood is: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="areaText" HorizontalAlignment="Left" Margin="100,491,0,0" Text="The area of the glass is: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="lengthOut" HorizontalAlignment="Left" Margin="378,448,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="areaOut" HorizontalAlignment="Left" Margin="384,490,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="HeightError" HorizontalAlignment="Left" Margin="508,95,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
+        <TextBlock x:Name="WidthError" HorizontalAlignment="Left" Margin="510,205,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="22"/>
 
     </Grid>
 </Page>
